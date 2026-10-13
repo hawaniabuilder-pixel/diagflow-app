@@ -1,4 +1,4 @@
-// PAGE D'ACCUEIL (publique) : présenter l'outil, les tarifs, et donner envie de s'inscrire.
+//vizionPAGEvizionD'ACCUEIL (publique) : présenter l'outil, les tarifs, et donner envie de s'inscrire.
 // ✏️ Les prix se règlent dans app/lib/entreprise.ts (offre Solo, offre Équipe)
 //    et app/lib/templates.ts (prix conseillés des rapports Express / Complet / Premium).
 import type { Metadata } from 'next'
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
 // « Pourquoi pas une IA généraliste ? » : la comparaison avec le bricolage (notes de réunion + IA généraliste).
 // Pas de nom de marque : une publicité comparative doit rester objective et vérifiable.
 const COMPARAISON = [
-  { critere: 'Prix par consultant', bricolage: 'Environ 40 à 70 € par mois (2 abonnements)', diagflow: `${TARIF_SOLO_MENSUEL ?? '—'} € par mois en Solo, environ 20 € en équipe` },
-  { critere: 'Rapport pour une PME', bricolage: 'À redemander et remettre en page à chaque fois', diagflow: 'Même structure à chaque fois, 3 formats prêts à vendre' },
-  { critere: 'Temps et argent gagnés', bricolage: 'Estimés par l’IA, à vérifier un par un', diagflow: 'Calculés par le logiciel à partir de votre taux horaire' },
-  { critere: 'Votre image', bricolage: 'Logo et couleurs à ajouter à la main', diagflow: 'Rapport à votre logo et à vos couleurs' },
-  { critere: 'Contenu français', bricolage: 'Conseils génériques', diagflow: 'Outils utilisés par les PME françaises, points RGPD, toutes les régions' },
-  { critere: 'Après l’envoi', bricolage: 'Rien : relances à la main', diagflow: 'Lien suivi, relances à J+3, J+7, J+14, missions signées' },
+  { critere: 'Prix par consultant', bricolage: 'Environ 40 à 70 € par mois (2 abonnements)', vizion: `${TARIF_SOLO_MENSUEL ?? '—'} € par mois en Solo, environ 20 € en équipe` },
+  { critere: 'Rapport pour une PME', bricolage: 'À redemander et remettre en page à chaque fois', vizion: 'Même structure à chaque fois, 3 formats prêts à vendre' },
+  { critere: 'Temps et argent gagnés', bricolage: 'Estimés par l’IA, à vérifier un par un', vizion: 'Calculés par le logiciel à partir de votre taux horaire' },
+  { critere: 'Votre image', bricolage: 'Logo et couleurs à ajouter à la main', vizion: 'Rapport à votre logo et à vos couleurs' },
+  { critere: 'Contenu français', bricolage: 'Conseils génériques', vizion: 'Outils utilisés par les PME françaises, points RGPD, toutes les régions' },
+  { critere: 'Après l’envoi', bricolage: 'Rien : relances à la main', vizion: 'Lien suivi, relances à J+3, J+7, J+14, missions signées' },
 ]
 
 // Les 3 étapes du parcours (pas de faux témoignages : en France, publier de faux avis est une pratique commerciale trompeuse)
@@ -165,7 +165,7 @@ export default function Home() {
                   <tr key={c.critere}>
                     <th scope="row" className="px-5 py-4 font-medium text-gray-200">{c.critere}</th>
                     <td className="px-5 py-4 text-gray-400">{c.bricolage}</td>
-                    <td className="px-5 py-4 text-white">✓ {c.diagflow}</td>
+                    <td className="px-5 py-4 text-white">✓ {c.vizion}</td>
                   </tr>
                 ))}
               </tbody>
