@@ -17,7 +17,7 @@ import {
 } from './lib/entreprise'
 
 export const metadata: Metadata = {
-  title: 'Diagnostic IA — De l’entretien au rapport à votre marque, prêt le jour même',
+  title: 'vizion — De l’entretien au rapport à votre marque, prêt le jour même',
   description:
     'Pour les consultants, experts-comptables et coachs : transformez un entretien avec un dirigeant de PME en rapport chiffré et plan d’action. Partout en France.',
 }
@@ -152,7 +152,7 @@ export default function Home() {
           </p>
           <div className="mt-10 overflow-x-auto rounded-xl border border-gray-700">
             <table className="w-full min-w-[640px] text-left text-sm">
-              <caption className="sr-only">Comparaison entre un outil de notes avec une IA généraliste, et Diagnostic IA</caption>
+              <caption className="sr-only">Comparaison entre un outil de notes avec une IA généraliste, et vizion</caption>
               <thead className="bg-gray-800 text-gray-300">
                 <tr>
                   <th scope="col" className="px-5 py-4 font-semibold"> </th>
