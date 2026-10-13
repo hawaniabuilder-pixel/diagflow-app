@@ -6,8 +6,8 @@ import PageLegale, { Info, Section } from '../components/PageLegale'
 import { ENTREPRISE, HEBERGEUR_DONNEES } from '../lib/entreprise'
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité — Diagnostic IA',
-  description: 'Comment Diagnostic IA traite les données personnelles.',
+  title: 'Politique de confidentialité — Vizion',
+  description: 'Comment Vizion traite les données personnelles.',
 }
 
 export default function ConfidentialitePage() {

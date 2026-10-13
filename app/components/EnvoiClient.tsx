@@ -39,7 +39,7 @@ const boutonSecondaire =
 export default function EnvoiClient({ diagnosticId, entreprise }: { diagnosticId: string; entreprise: string }) {
   const [infos, setInfos] = useState<InfosPartage | null>(null)
   const [emailClient, setEmailClient] = useState('')
-  const [objet, setObjet] = useState(`Votre diagnostic IA – ${entreprise}`)
+  const [objet, setObjet] = useState(`Votre Vizion – ${entreprise}`)
   const [message, setMessage] = useState(
     `Bonjour,\n\nSuite à notre entretien, vous trouverez ci-dessous votre diagnostic personnalisé : les points de friction identifiés, les outils recommandés et un plan d'action concret sur 4 jours.\n\nJe reste à votre disposition pour en discuter.\n\nBien cordialement,`,
   )

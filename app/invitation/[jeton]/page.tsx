@@ -27,7 +27,7 @@ function Cadre({ children }: { children: React.ReactNode }) {
   return (
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-b from-gray-900 to-black px-4 py-10 text-white">
       <div className="w-full max-w-lg rounded-xl border border-gray-700 bg-gray-800 p-6 sm:p-8">
-        <p className="text-lg font-bold text-blue-400">Diagnostic IA</p>
+        <p className="text-lg font-bold text-blue-400">Vizion</p>
         {children}
       </div>
     </main>

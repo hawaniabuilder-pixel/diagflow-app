@@ -35,7 +35,7 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-gray-900 to-black px-4 text-white">
       <div className="w-full max-w-md rounded-xl bg-gray-800 p-8 shadow-lg">
-        <a href="/" className="block text-center text-sm font-semibold text-blue-400">Diagnostic IA</a>
+        <a href="/" className="block text-center text-sm font-semibold text-blue-400">Vizion</a>
         <h1 className="mb-8 mt-2 text-center text-3xl font-bold">Connexion</h1>
 
         {suite && (

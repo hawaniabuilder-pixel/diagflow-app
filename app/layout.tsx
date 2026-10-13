@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Diagnostic IA",
-  description: "Diagnostics IA pour les PME françaises, par et pour les consultants.",
+  title: "Vizion",
+    description: "Le diagnostic Vizion pour les PME françaises, par et pour les consultants.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

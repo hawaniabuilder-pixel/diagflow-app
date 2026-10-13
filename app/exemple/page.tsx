@@ -9,8 +9,8 @@ import { TEMPLATE_IDS, TEMPLATES, templateSur } from '../lib/templates'
 import { ANALYSES_OFFERTES_ESSAI, ENTREPRISE } from '../lib/entreprise'
 
 export const metadata: Metadata = {
-  title: 'Exemple de rapport — Diagnostic IA',
-  description: 'Un exemple complet de diagnostic IA pour une PME française : points de friction, outils, plan d’action et gains en euros.',
+  title: 'Exemple de rapport — Vizion',
+  description: 'Un exemple complet de Vizion pour une PME française : points de friction, outils, plan d’action et gains en euros.',
 }
 
 // Le consultant fictif qui « signe » l'exemple

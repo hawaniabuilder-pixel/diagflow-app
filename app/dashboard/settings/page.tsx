@@ -567,7 +567,7 @@ export default function SettingsPage() {
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black px-4 pb-36 pt-8 text-white sm:px-6">
       <div className="mx-auto max-w-6xl">
         <header className="mb-10 flex items-center justify-between border-b border-gray-800 pb-6">
-          <a href="/dashboard" onClick={(e) => quitter(e, '/dashboard')} className="text-lg font-bold text-blue-400">Diagnostic IA</a>
+          <a href="/dashboard" onClick={(e) => quitter(e, '/dashboard')} className="text-lg font-bold text-blue-400">Vizion</a>
           <a href="/dashboard" onClick={(e) => quitter(e, '/dashboard')} className="text-sm text-gray-400 transition hover:text-white">← Tableau de bord</a>
         </header>
 

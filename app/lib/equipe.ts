@@ -168,10 +168,10 @@ export const lienInvitation = (jeton: string) => `${window.location.origin}/invi
 export function emailInvitation(nomEquipe: string, role: Role, email: string, lien: string, fin = '') {
   const r = infoRole(role)
   return {
-    objet: `Invitation à rejoindre l’équipe « ${nomEquipe} » sur Diagnostic IA`,
+    objet: `Invitation à rejoindre l’équipe « ${nomEquipe} » sur Vizion`,
     corps: `Bonjour,
 
-Je vous invite à rejoindre l’équipe « ${nomEquipe} » sur Diagnostic IA, en tant que ${r.libelle}.
+Je vous invite à rejoindre l’équipe « ${nomEquipe} » sur Vizion, en tant que ${r.libelle}.
 ${r.emoji} ${r.description}
 
 Pour accepter, ouvrez ce lien (valable 7 jours) :

@@ -15,7 +15,7 @@ import type { DiagnosticIA } from '../../lib/diagnostic-schema'
 import { couleurSure, couleurTexteSur, lienHttpsSur } from '../../lib/profil'
 
 export const metadata: Metadata = {
-  title: 'Votre diagnostic IA',
+  title: 'Votre Vizion',
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
   referrer: 'no-referrer',
 }

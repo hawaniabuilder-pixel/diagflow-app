@@ -15,8 +15,8 @@ import {
 } from '../lib/entreprise'
 
 export const metadata: Metadata = {
-  title: 'CGU / CGV — Diagnostic IA',
-  description: 'Conditions générales d’utilisation et de vente du service Diagnostic IA.',
+  title: 'CGU / CGV — Vizion',
+  description: 'Conditions générales d’utilisation et de vente du service Vizion.',
 }
 
 export default function CgvPage() {

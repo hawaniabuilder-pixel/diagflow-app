@@ -210,7 +210,7 @@ export default function FicheClientPage() {
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-black px-4 pt-8 text-white sm:px-6">
       <div className="mx-auto max-w-5xl">
         <header className="mb-8 flex flex-wrap items-center justify-between gap-3 border-b border-gray-800 pb-6">
-          <a href="/dashboard" className="text-lg font-bold text-blue-400">Diagnostic IA</a>
+          <a href="/dashboard" className="text-lg font-bold text-blue-400">Vizion</a>
           <a href="/dashboard" className="text-sm text-gray-400 transition hover:text-white">← Tableau de bord</a>
         </header>
 

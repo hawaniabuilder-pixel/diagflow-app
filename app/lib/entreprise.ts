@@ -14,7 +14,7 @@ export const estACompleter = (valeur: string | null | undefined) => !valeur || v
 
 // --- Qui édite le site (toi) ---
 export const ENTREPRISE = {
-  nomCommercial: 'Diagnostic IA',
+  nomCommercial: 'Vizion',
   raisonSociale: '[À COMPLÉTER : ton prénom et nom (micro-entreprise) ou le nom de ta société]',
   formeJuridique: '[À COMPLÉTER : ex. Entrepreneur individuel (micro-entreprise), SASU, EURL…]',
   capital: '', // ex. « 1 000 € » pour une société ; laisse vide pour une micro-entreprise

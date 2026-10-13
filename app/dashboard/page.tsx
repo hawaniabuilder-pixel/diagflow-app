@@ -476,7 +476,7 @@ export default function DashboardPage() {
         {/* En-tête + actions rapides */}
         <header className="mb-10 flex flex-col gap-4 border-b border-gray-800 pb-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <a href="/" className="text-lg font-bold text-blue-400">Diagnostic IA</a>
+            <a href="/" className="text-lg font-bold text-blue-400">Vizion</a>
             {email && <p className="mt-1 text-sm text-gray-400">Connecté : {email}</p>}
           </div>
           <div className="flex flex-wrap gap-3">

@@ -5,8 +5,8 @@ import PageLegale, { Info, Section } from '../components/PageLegale'
 import { ENTREPRISE, HEBERGEUR_DONNEES, HEBERGEUR_SITE } from '../lib/entreprise'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — Diagnostic IA',
-  description: 'Éditeur, hébergeurs et contact du service Diagnostic IA.',
+  title: 'Mentions légales — Vizion',
+  description: 'Éditeur, hébergeurs et contact du service Vizion.',
 }
 
 export default function MentionsLegalesPage() {

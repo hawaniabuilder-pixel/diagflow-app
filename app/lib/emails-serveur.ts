@@ -3,7 +3,7 @@
 //
 // Réglages dans .env.local :
 //   RESEND_API_KEY    clé Resend (re_…)
-//   EMAIL_EXPEDITEUR  ex. « Diagnostic IA <onboarding@resend.dev> » pour tester
+//   EMAIL_EXPEDITEUR  ex. « Vizion <onboarding@resend.dev> » pour tester
 //                     (cette adresse d'essai n'envoie QU'À l'email de votre compte Resend)
 //   SITE_URL          adresse du site en ligne (ex. https://diagflow.fr), pour les liens des emails
 //   CRON_SECRET       mot de passe de la tâche quotidienne (le même dans Vercel)

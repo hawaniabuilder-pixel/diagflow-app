@@ -62,7 +62,7 @@ export function modeleEmail(etape: EtapeRelance, entreprise: string, lienRapport
   switch (etape) {
     case 'j3':
       return {
-        objet: `Votre diagnostic IA – avez-vous des questions ?`,
+        objet: `Votre Vizion – avez-vous des questions ?`,
         corps: `Bonjour,\n\nJe voulais m'assurer que vous aviez bien reçu le diagnostic de ${entreprise} et savoir si vous aviez pu le parcourir.\n\nAvez-vous des questions sur les points de friction identifiés ou sur les outils recommandés ? Je peux vous l'expliquer de vive voix en 15 minutes, par téléphone ou en visio.${lien}\n\nBien cordialement,${fin}${DESINSCRIPTION}`,
       }
     case 'j7':

@@ -158,7 +158,7 @@ function construireDiagnostic(brut: z.infer<typeof reponseIASchema>, tauxHoraire
 function resumeTexte(d: DiagnosticIA, entreprise: string, template: TemplateId) {
   const f = d.impact_financier
   return [
-    `Diagnostic IA (${TEMPLATES[template].nom}) — ${entreprise}`,
+    `Vizion (${TEMPLATES[template].nom}) — ${entreprise}`,
     d.synthese.situation,
     `Problème principal : ${d.synthese.probleme_principal}`,
     `Impact estimé : ${f.impact_annuel.toLocaleString('fr-FR')} €/an (${f.total_heures_economisees_semaine} h/semaine)`,
