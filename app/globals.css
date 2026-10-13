@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+   /* stylelint-disable-next-line */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------------------------------------------
+   Accessibilité
+   --------------------------------------------------------------- */
+
+/* Focus visible sur TOUS les éléments interactifs (liens, boutons, cases…),
+   uniquement quand on navigue au clavier (touche Tab) : un contour bleu bien visible. */
+:focus-visible {
+  outline: 3px solid #60a5fa; /* bleu clair : contraste > 4:1 sur les fonds sombres */
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Les champs de saisie ont déjà leur propre anneau bleu au focus */
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+/* Si la personne a demandé "moins d'animations" dans son système, on les coupe */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Impression / « Enregistrer au format PDF »
+   --------------------------------------------------------------- */
+/* ---------- Impression / export PDF professionnel ---------- */
+@media print {
+  @page { margin: 1.5cm; size: A4; }
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #ccc !important;
+    /* EMPÊCHE LES MOTS D'ÊTRE COUPÉS BIZARREMENT */
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    letter-spacing: normal !important;
+    word-break: normal !important;
+  }
+  body, main {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  /* CACHE LES ÉLÉMENTS INUTILES À L'IMPRESSION */
+  button, header, nav, .print-hidden, .no-print {
+    display: none !important;
+  }
+  section, div {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  a { text-decoration: none; }
+}/* ========================================= */
+/* FORCE PALETTE DIAGFLOW - WORKAROUND FINAL */
+/* ========================================= */
+
+/* Fonds principaux */
+.bg-ocean { background-color: #0F172A !important; } /* Bleu nuit profond */
+.bg-ocean-light { background-color: #1E293B !important; } /* Slate-800 pour cartes */
+.bg-emerald\/5 { background-color: rgba(16, 185, 129, 0.05) !important; } /* Fond vert très léger */
+
+/* Textes clés */
+.text-text-primary { color: #F8FAFC !important; } /* Blanc cassé doux */
+.text-text-secondary { color: #CBD5E1 !important; } /* Gris clair */
+.text-text-muted { color: #94A3B8 !important; } /* Gris moyen */
+.text-electric { color: #06B6D4 !important; } /* Cyan vif (Prix, Accents) */
+.text-emerald { color: #10B981 !important; } /* Vert succès */
+.text-coral { color: #FF6B35 !important; } /* Orange action */
+
+/* Boutons & Actions */
+.bg-coral { background-color: #FF6B35 !important; } /* Bouton principal orange */
+.hover\:bg-coral-hover:hover { background-color: #E55A2B !important; } /* Hover plus foncé */
+.shadow-glow-coral { box-shadow: 0 0 20px rgba(255, 107, 53, 0.4) !important; } /* Halo lumineux */
+
+/* Bordures spécifiques cartes */
+.border-emerald\/30 { border-color: rgba(16, 185, 129, 0.3) !important; }
+.border-electric\/50 { border-color: rgba(6, 182, 212, 0.5) !important; }
+.border-coral\/50 { border-color: rgba(255, 107, 53, 0.5) !important; }
+.border-ocean-lighter { border-color: #334155 !important; }
+
+/* Dégradés de texte (Titre H1) */
+/* Dégradés de texte (Titre H1) */
+.from-electric.to-emerald { 
+  background-image: linear-gradient(to right, #06B6D4, #10B981);
+  -webkit-background-clip: text;
+  background-clip: text; /* <-- AJOUTE CETTE LIGNE ICI */
+  -webkit-text-fill-color: transparent;
+}
