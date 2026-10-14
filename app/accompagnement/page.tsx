@@ -97,7 +97,61 @@ export default function AccompagnementPage() {
           </article>
 
         </section>
+        {/* --- NOUVELLE SECTION : DIAGNOSTIC DIRECT POUR PME --- */}
+        <section className="mt-16 rounded-2xl border border-coral/50 bg-ocean-light p-8 shadow-card-dark relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-coral/10 blur-full -z-10"></div>
+          
+          <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
+            ⚡ Besoin d'un avis expert MAINTENANT ? 
+            <span className="px-2 py-0.5 rounded-full bg-coral text-xs font-black uppercase tracking-wide">Offre Limitée</span>
+          </h3>
+          
+          <p className="text-text-secondary mb-6 max-w-2xl">
+            Pas le temps de chercher un consultant ? Obtenez votre diagnostic complet en moins de 48h chrono, réalisé et relu personnellement par notre fondateur.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Carte Petit Budget */}
+            <div className="rounded-xl border border-ocean-lighter bg-ocean/50 p-6 hover:border-electric transition-colors">
+              <div className="flex justify-between items-baseline mb-4">
+                <h4 className="font-bold text-lg text-white">Pack Essentiel</h4>
+                <span className="text-2xl font-black text-electric">149 €</span>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-400 mb-6">
+                <li>✓ Analyse IA approfondie</li>
+                <li>✓ Relecture humaine garantie</li>
+                <li>✓ Rapport PDF personnalisé</li>
+                <li>✓ Livraison sous 48h ouvrées</li>
+              </ul>
+              <button onClick={() => window.location.href='/paiement-direct?type=essentiel'} 
+                      className="w-full py-3 rounded-lg bg-transparent border-2 border-electric text-electric font-bold hover:bg-electric/10 transition-all active:scale-[0.98]">
+                Commander mon Audit Flash →
+              </button>
+            </div>
 
+            {/* Carte Premium */}
+            <div className="rounded-xl border border-coral/50 bg-gradient-to-br from-ocean-light to-ocean p-6 shadow-glow-coral">
+              <div className="flex justify-between items-baseline mb-4">
+                <h4 className="font-bold text-lg text-white">Pack Stratégique+</h4>
+                <span className="text-2xl font-black text-white">299 €</span>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-300 mb-6">
+                <li>✓ Tout le Pack Essentiel inclus</li>
+                <li>✓ Benchmark sectoriel exclusif</li>
+                <li>✓ Plan d'action priorisé sur 90 jours</li>
+                <li>✓ Appel de restitution 30 min avec le fondateur</li>
+              </ul>
+              <button onClick={() => window.location.href='/paiement-direct?type=strategique'} 
+                      className="w-full py-3 rounded-lg bg-coral hover:bg-coral-hover text-white font-bold shadow-md transition-all active:scale-[0.98]">
+                Sécuriser ma place Premium 🔥
+              </button>
+            </div>
+          </div>
+          
+          <p className="mt-4 text-xs text-center text-muted italic">
+            *Seulement 5 slots disponibles par semaine pour garantir la qualité de relecture humaine.
+          </p>
+        </section>
         {/* SECTION GARANTIE ROI & APPEL À L'ACTION FINAL */}
         <footer className="mt-16 rounded-2xl border border-emerald/20 bg-emerald/5 p-8 text-center backdrop-blur-md">
           <h3 className="text-xl font-bold text-emerald mb-2">Garantie ROI 90 jours</h3>
