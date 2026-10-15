@@ -14,19 +14,19 @@ export const estACompleter = (valeur: string | null | undefined) => !valeur || v
 
 // --- Qui édite le site (toi) ---
 export const ENTREPRISE = {
-  nomCommercial: 'Vizion',
-  raisonSociale: '[À COMPLÉTER : ton prénom et nom (micro-entreprise) ou le nom de ta société]',
-  formeJuridique: '[À COMPLÉTER : ex. Entrepreneur individuel (micro-entreprise), SASU, EURL…]',
+  nomCommercial: 'Vizion Scan',
+  raisonSociale: 'Vision scan en cour de construction',
+  formeJuridique: 'Particulier porteur de projet',
   capital: '', // ex. « 1 000 € » pour une société ; laisse vide pour une micro-entreprise
-  siret: '[À COMPLÉTER : numéro SIRET (14 chiffres)]',
+  siret: '',
   rcs: '', // ex. « RCS Lyon 123 456 789 » ; laisse vide si tu n'es pas inscrit au RCS
   tva: '', // numéro de TVA intracommunautaire ; laisse vide si « TVA non applicable, art. 293 B du CGI »
-  adresse: '[À COMPLÉTER : adresse postale complète]',
-  email: '[À COMPLÉTER : adresse email de contact]',
+  adresse: '23 rue de la paix 92000 Nanterre',
+  email: 'contact@vizionscan.com',
   telephone: '', // facultatif
-  directeurPublication: '[À COMPLÉTER : prénom et nom du responsable du site]',
-  villeTribunal: '[À COMPLÉTER : ville du tribunal compétent, ex. Lyon]',
-  dateMiseAJour: '[À COMPLÉTER : date, ex. 1er octobre 2026]',
+  directeurPublication: 'Faouzi AHAMADA',
+  villeTribunal: 'Nanterre',
+  dateMiseAJour: '16 octobre 2026',
 }
 
 // --- Où le site est hébergé ---
