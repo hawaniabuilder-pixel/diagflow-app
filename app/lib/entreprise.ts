@@ -39,7 +39,7 @@ export const HEBERGEUR_SITE = {
 // Base de données et comptes : Supabase. La région est visible dans Supabase > Project Settings > General.
 export const HEBERGEUR_DONNEES = {
   nom: 'Supabase Inc.',
-  region: '[À COMPLÉTER : région de ton projet Supabase, ex. West EU (Paris) ou Central EU (Frankfurt)]',
+  region: ' West EU (Paris)',
   site: 'https://supabase.com',
 }
 
