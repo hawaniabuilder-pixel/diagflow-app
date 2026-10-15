@@ -80,6 +80,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+            {/* --- BANDEAU HAUT PME --- */}
+      <div className="w-full bg-coral/10 border-b border-coral/30 py-2 px-4 text-center">
+        <p className="text-sm font-medium text-orange-200 flex items-center justify-center gap-2 flex-wrap">
+          <span>🚀 Nouveauté :</span> 
+          <a href="/accompagnement" className="underline decoration-dotted underline-offset-4 hover:text-white transition-colors font-bold whitespace-nowrap">
+            Audit Flash Direct pour Dirigeants PME (48h) →
+          </a>
+        </p>
+      </div>
       {/* En-tête */}
       <header className="container mx-auto px-6 py-6">
         <nav className="flex flex-wrap items-center justify-between gap-4" aria-label="Navigation principale">
@@ -241,7 +250,7 @@ export default function Home() {
                   <li>✓ Rôles Admin, Consultant et Viewer</li>
                   <li>✓ Viewers gratuits (lecture seule)</li>
                   <li>✓ Partage des diagnostics dans l’équipe</li>
-                  <li>✓ Essai sans carte bancaire ({ANALYSES_OFFERTES_ESSAI} analyses IA offertes par personne)</li>
+                 <li>✓ Essai sans carte bancaire ({ANALYSES_OFFERTES_ESSAI} analyses IA offertes par personne)</li>
                 </ul>
                 <a href="/signup?suite=%2Fdashboard%2Fequipe" className="mt-6 block rounded-lg bg-purple-600 py-3 text-center font-semibold transition hover:bg-purple-700">
                   Démarrer l’essai Équipe
@@ -284,6 +293,27 @@ export default function Home() {
             </a>
           </div>
         </section>
+              
+      {/* --- PONT VERS OFFRES PME (Discret mais Efficace) --- */}
+      <div className="mt-20 py-10 border-t border-gray-800 text-center bg-gray-900/50 rounded-xl mx-4 md:mx-auto max-w-4xl mb-12">
+        <p className="text-gray-400 mb-4 text-sm uppercase tracking-wider font-semibold">
+          Vous êtes dirigeant de PME ? Pas de temps à perdre ?
+        </p>
+        <h3 className="text-2xl font-bold text-white mb-6">
+          Obtenez votre diagnostic stratégique en 48h chrono.
+        </h3>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/accompagnement" 
+            className="px-6 py-3 rounded-lg bg-coral/10 border border-coral/50 text-coral font-bold hover:bg-coral hover:text-white transition-all shadow-lg"
+          >
+            Voir les Audits Flash (149€ / 299€) →
+          </a>
+        </div>
+        <p className="text-xs text-gray-500 mt-4 italic">
+          Réalisé et relu personnellement par notre fondateur. Slots limités.
+        </p>
+      </div>
       </main>
 
       <div className="container mx-auto px-6">

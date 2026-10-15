@@ -1,9 +1,11 @@
 'use client';
+const PRICE_ID_ESSENTIEL = 'https://buy.stripe.com/14A7sM1nkdx60DC7Pa1wY04'; 
+const PRICE_ID_PREMIUM = 'https://buy.stripe.com/3cIeVe0jg3Wwdqob1m1wY03'; 
 
 export default function AccompagnementPage() {
-  const LINK_COACHING = 'https://buy.stripe.com/14AbJ2j0geBabigd9u1WY0'; 
-  const LINK_KICKOFF = 'https://buy.stripe.com/7sY4gAd622SsbiggLG1wY01';   
-  const LINK_TRANSFORMATION = 'https://buy.stripe.com/9B6cN60jg0kk3P08TelwY02'; 
+  const LINK_COACHING = 'https://buy.stripe.com/8x2bJ2giefFe5XWb1m1wY07'; 
+  const LINK_KICKOFF = 'https://buy.stripe.com/7sYbJ25DA9gQcmkb1m1wY05';   
+  const LINK_TRANSFORMATION = 'https://buy.stripe.com/6oUcN68PM9gQeus1qM1wY06'; 
   
   return (
     <main className="min-h-screen bg-ocean text-text-primary p-4 md:p-8">
@@ -18,7 +20,7 @@ export default function AccompagnementPage() {
           </h1>
           
           <p className="text-lg text-text-secondary max-w-3xl mx-auto">
-            Consultant indépendant : 150-300 €/h · Agence : 2 500-6 000 € · DiagFlow : dès 79 €/mois
+            Consultant indépendant : 150-300 €/h · Agence : 2 500-6 000 € . Vizion : dès 79 €/mo
           </p>
         </header>
 
@@ -123,10 +125,14 @@ export default function AccompagnementPage() {
                 <li>✓ Rapport PDF personnalisé</li>
                 <li>✓ Livraison sous 48h ouvrées</li>
               </ul>
-              <button onClick={() => window.location.href='/paiement-direct?type=essentiel'} 
-                      className="w-full py-3 rounded-lg bg-transparent border-2 border-electric text-electric font-bold hover:bg-electric/10 transition-all active:scale-[0.98]">
-                Commander mon Audit Flash →
-              </button>
+            <a 
+  href="https://buy.stripe.com/14A7sM1nkdx60DC7Pa1wY04" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-full block text-center py-3 rounded-lg bg-transparent border-2 border-electric text-electric font-bold hover:bg-electric/10 transition-all active:scale-[0.98]"
+>
+  Commander mon Audit Flash →
+</a>
             </div>
 
             {/* Carte Premium */}
@@ -141,10 +147,15 @@ export default function AccompagnementPage() {
                 <li>✓ Plan d'action priorisé sur 90 jours</li>
                 <li>✓ Appel de restitution 30 min avec le fondateur</li>
               </ul>
-              <button onClick={() => window.location.href='/paiement-direct?type=strategique'} 
-                      className="w-full py-3 rounded-lg bg-coral hover:bg-coral-hover text-white font-bold shadow-md transition-all active:scale-[0.98]">
-                Sécuriser ma place Premium 🔥
-              </button>
+          <a 
+  href="https://buy.stripe.com/3cIeVe0jg3Wwdqob1m1wY03" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="w-full block text-center py-3 rounded-lg bg-coral hover:bg-coral-hover text-white font-bold shadow-md transition-all active:scale-[0.98]"
+>
+  Sécuriser ma place Premium 🔥
+</a>
+                   
             </div>
           </div>
           
