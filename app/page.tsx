@@ -304,7 +304,7 @@ export default function Home() {
         </h3>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="https://buy.stripe.com/TON_VRAI_LIEN_ICI" 
+            href="https://buy.stripe.com/14A7sM1nkdx60DC7Pa1wY04" 
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg bg-coral/10 border border-coral/50 text-coral font-bold hover:bg-coral hover:text-white transition-all shadow-lg inline-block"
