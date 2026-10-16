@@ -5,22 +5,19 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-6">
       <div className="max-w-lg w-full text-center space-y-8">
         
-        {/* Titre */}
         <h1 className="text-3xl md:text-4xl font-bold">
           Contactez Vizion Scan
         </h1>
         
-        {/* Message */}
         <p className="text-gray-400 text-lg">
-          Une question sur les tarifs ou un devis rapide ?<br/>
+          Une question ? Un devis rapide ?<br/>
           Écrivez-nous directement. Réponse sous 24h.
         </p>
 
-        {/* L'EMAIL EN GROS (La solution qui marche toujours) */}
+        {/* L'EMAIL EN GROS - Solution qui marche toujours */}
         <div className="bg-gray-800 border border-gray-700 rounded-xl p-8 my-8">
           <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">Notre adresse email :</p>
           
-          {/* Le lien mailto est là, mais même s'il ne s'ouvre pas, le texte est visible */}
           <a 
             href="mailto:contact@vizionscan.com" 
             className="block text-2xl md:text-3xl font-mono text-blue-400 hover:text-blue-300 break-all select-all"
@@ -34,7 +31,6 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Lien retour */}
         <div className="pt-4">
           <Link href="/" className="text-gray-500 hover:text-white underline text-sm">
             ← Retour à l'accueil
