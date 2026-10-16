@@ -1,41 +1,44 @@
-import { Metadata } from 'next';
-import Link from 'next/link'; // ⚠️ Import obligatoire pour le lien retour
-
-export const metadata: Metadata = {
-  title: 'Contact – Vizion Scan',
-  description: 'Parlez-nous de votre besoin en diagnostic PME ou abonnement consultant.',
-};
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-8">
-      {/* Conteneur centré */}
-      <div className="max-w-md w-full space-y-8 text-center">
+    <main className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-6">
+      <div className="max-w-lg w-full text-center space-y-8">
         
-        {/* Titre principal */}
-        <h1 className="text-4xl font-bold tracking-tight">
-          Contactez Vizion
+        {/* Titre */}
+        <h1 className="text-3xl md:text-4xl font-bold">
+          Contactez Vizion Scan
         </h1>
         
-        {/* Sous-titre explicatif */}
-        <p className="text-lg text-gray-400">
-          Une question ? Un devis rapide ?<br/>
-          Réponse garantie sous 24h ouvrées.
+        {/* Message */}
+        <p className="text-gray-400 text-lg">
+          Une question sur les tarifs ou un devis rapide ?<br/>
+          Écrivez-nous directement. Réponse sous 24h.
         </p>
-        
-        {/* Bouton Email Direct */}
-        <a 
-          href="mailto:contact@vizionscan.com" 
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg transition-all transform hover:-translate-y-1 active:scale-[0.98]"
-        >
-          ✉️ Envoyer un email
-        </a>
 
-        {/* Lien Retour Accueil */}
-        <div className="pt-8 border-t border-gray-800 mt-8">
-           <Link href="/" className="text-sm text-gray-500 hover:text-white transition-colors underline decoration-dotted">
-             ← Retour à l'accueil
-           </Link>
+        {/* L'EMAIL EN GROS (La solution qui marche toujours) */}
+        <div className="bg-gray-800 border border-gray-700 rounded-xl p-8 my-8">
+          <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">Notre adresse email :</p>
+          
+          {/* Le lien mailto est là, mais même s'il ne s'ouvre pas, le texte est visible */}
+          <a 
+            href="mailto:contact@vizionscan.com" 
+            className="block text-2xl md:text-3xl font-mono text-blue-400 hover:text-blue-300 break-all select-all"
+          >
+            contact@vizionscan.com
+          </a>
+          
+          <p className="mt-4 text-xs text-gray-500 italic">
+            👆 Cliquez sur l'adresse ci-dessus.<br/>
+            Si rien ne se passe, sélectionnez-la et copiez-la (Ctrl+C) dans votre boîte mail.
+          </p>
+        </div>
+
+        {/* Lien retour */}
+        <div className="pt-4">
+          <Link href="/" className="text-gray-500 hover:text-white underline text-sm">
+            ← Retour à l'accueil
+          </Link>
         </div>
 
       </div>
