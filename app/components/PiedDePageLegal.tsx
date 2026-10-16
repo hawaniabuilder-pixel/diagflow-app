@@ -1,7 +1,7 @@
 // Pied de page avec les liens légaux (accueil, tableau de bord, pages légales).
 // Obligatoire en France : les mentions légales doivent être accessibles depuis toutes les pages publiques.
 import { ENTREPRISE, estACompleter } from '../lib/entreprise'
-
+import Link from 'next/link';
 const LIENS = [
   { href: '/mentions-legales', texte: 'Mentions légales' },
   { href: '/cgv', texte: 'CGU / CGV' },
@@ -16,7 +16,7 @@ export default function PiedDePageLegal({ className = '' }: { className?: string
         {LIENS.map((l) => (
           <a key={l.href} href={l.href} className="transition hover:text-white">{l.texte}</a>
         ))}
-        {contact && <a href={`mailto:${contact}`} className="transition hover:text-white">Contact</a>}
+        {contact && <Link href="/contact" className="transition hover:text-white">Contact</Link>}
       </nav>
       <p className="mt-3 text-xs text-gray-500" suppressHydrationWarning>© {new Date().getFullYear()} {ENTREPRISE.nomCommercial}. Tous droits réservés.</p>
     </footer>
