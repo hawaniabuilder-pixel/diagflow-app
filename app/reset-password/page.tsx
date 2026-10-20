@@ -106,7 +106,7 @@ export default function ResetPasswordPage() {
             <p role="alert" className="rounded-lg border border-amber-600 bg-amber-950/60 p-4 text-sm text-amber-100">
               ⌛ {error || 'Ce lien n’est pas valable : il a peut-être expiré ou déjà servi.'}
             </p>
-            <a href="/forgot-password" className="mt-5 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700">
+            <a href="/forgot-password" className="mt-5 inline-block rounded-lg bg-orange-500 px-6 py-3 font-semibold hover:bg-orange-600">
               Recevoir un nouveau lien
             </a>
           </div>
@@ -117,7 +117,7 @@ export default function ResetPasswordPage() {
             <p role="status" className="rounded-lg border border-green-700 bg-green-950/60 p-4 text-green-100">
               ✅ Votre mot de passe a été changé. Vous êtes connecté.
             </p>
-            <a href="/dashboard" className="mt-5 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700">
+            <a href="/dashboard" className="mt-5 inline-block rounded-lg bg-orange-500 px-6 py-3 font-semibold hover:bg-orange-600">
               Aller au tableau de bord
             </a>
           </div>
@@ -143,7 +143,7 @@ export default function ResetPasswordPage() {
               Afficher les mots de passe
             </label>
             <button type="submit" disabled={loading}
-              className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">
+              className="w-full rounded-lg bg-orange-500 py-3 font-semibold text-white hover:bg-orange-600 disabled:opacity-50">
               {loading ? 'Enregistrement…' : 'Enregistrer le nouveau mot de passe'}
             </button>
           </form>

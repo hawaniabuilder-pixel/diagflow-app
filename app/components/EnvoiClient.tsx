@@ -165,7 +165,7 @@ export default function EnvoiClient({ diagnosticId, entreprise }: { diagnosticId
       {/* Étape 1 : relecture + validation obligatoire */}
       <ol className="mt-4 space-y-4">
         <li className="flex flex-wrap items-center gap-3 text-sm">
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-xs font-bold">1</span>
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-xs font-bold">1</span>
           <span className="text-gray-200">Relisez et personnalisez le diagnostic</span>
           <a href={`/diagnostic/${diagnosticId}/relecture`}
             className="rounded-lg border border-blue-500 bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-200 transition hover:bg-blue-500/20">
@@ -173,7 +173,7 @@ export default function EnvoiClient({ diagnosticId, entreprise }: { diagnosticId
           </a>
         </li>
         <li className="flex items-start gap-3 text-sm">
-          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold">2</span>
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-500 text-xs font-bold">2</span>
           <label className="flex cursor-pointer items-start gap-3">
             <input type="checkbox" className="mt-0.5 h-5 w-5 shrink-0 accent-blue-500" checked={valide}
               disabled={infos.statut === 'envoyé' || infos.statut === 'clos'}
@@ -219,14 +219,14 @@ export default function EnvoiClient({ diagnosticId, entreprise }: { diagnosticId
 
           {!emailPret ? (
             <button type="button" onClick={preparerEmail} disabled={!emailOk || enCours}
-              className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50">
+              className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-50">
               📧 {enCours ? 'Préparation…' : 'Préparer l’email'}
             </button>
           ) : (
             <div className="rounded-lg border border-green-700 bg-green-950/30 p-4" role="status">
               <p className="font-semibold text-green-300">✅ Email prêt ! Comment voulez-vous l’envoyer ?</p>
               <div className="mt-3 flex flex-wrap gap-3">
-                <a href={mailto} className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700">
+                <a href={mailto} className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold transition hover:bg-orange-600">
                   📧 Ma messagerie (Outlook, Mail…)
                 </a>
                 <a href={gmail} target="_blank" rel="noopener noreferrer" className={boutonSecondaire}>

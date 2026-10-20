@@ -69,7 +69,7 @@ export default function VoirDiagnosticPartage() {
       <main className="flex min-h-screen items-center justify-center bg-gradient-to-b from-gray-900 to-black px-4 text-white">
         <div className="max-w-md rounded-xl border border-gray-700 bg-gray-800 p-8 text-center">
           <p role="alert" className="text-gray-200">Diagnostic introuvable : il n’est peut-être plus partagé avec l’équipe.</p>
-          <a href="/dashboard" className="mt-5 inline-block rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold hover:bg-blue-700">← Tableau de bord</a>
+          <a href="/dashboard" className="mt-5 inline-block rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold hover:bg-orange-600">← Tableau de bord</a>
         </div>
       </main>
     )

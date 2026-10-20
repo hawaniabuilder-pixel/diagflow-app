@@ -60,7 +60,7 @@ export default function SignupPage() {
             Cliquez sur le lien qu’il contient pour activer votre compte.
           </p>
           <p className="mt-3 text-sm text-gray-400">Rien reçu après 2 minutes ? Regardez dans les spams.</p>
-          <a href={avecSuite('/login', suite)} className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700">
+          <a href={avecSuite('/login', suite)} className="mt-6 inline-block rounded-lg bg-orange-500 px-6 py-3 font-semibold hover:bg-orange-600">
             Aller à la connexion
           </a>
         </div>
@@ -111,7 +111,7 @@ export default function SignupPage() {
           </p>
 
           <button type="submit" disabled={loading}
-            className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">
+            className="w-full rounded-lg bg-orange-500 py-3 font-semibold text-white hover:bg-orange-600 disabled:opacity-50">
             {loading ? 'Inscription…' : 'S’inscrire'}
           </button>
         </form>

@@ -211,7 +211,7 @@ export default function RapportDiagnostic({ d, mode }: { d: DiagnosticIA; mode: 
               return (
                 <li key={i} className="break-inside-avoid rounded-lg bg-gray-900/60 p-4">
                   <p className="flex items-start gap-2 font-medium">
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold">{i + 1}</span>
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-500 text-xs font-bold">{i + 1}</span>
                     {a}
                   </p>
                   {r && (

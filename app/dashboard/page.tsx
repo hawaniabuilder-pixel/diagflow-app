@@ -485,7 +485,7 @@ export default function DashboardPage() {
                 👁️ Lecture seule (Viewer)
               </span>
             ) : (
-              <a href="/diagnostic" className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-700">
+              <a href="/diagnostic" className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold transition hover:bg-orange-600">
                 + Nouveau diagnostic
               </a>
             )}
@@ -555,7 +555,7 @@ export default function DashboardPage() {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <button type="button" onClick={() => preparerRelance(l, etape)}
-                        className="rounded-lg bg-blue-600 px-3 py-2 text-xs font-semibold transition hover:bg-blue-700">
+                        className="rounded-lg bg-orange-500 px-3 py-2 text-xs font-semibold transition hover:bg-orange-600">
                         📧 Préparer l’email
                       </button>
                       <button type="button" onClick={() => marquerRelanceFaite(l, etape)}
@@ -618,7 +618,7 @@ export default function DashboardPage() {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <button type="button" onClick={() => preparerSuivi(l, etape)}
-                        className="rounded-lg bg-blue-600 px-3 py-2 text-xs font-semibold transition hover:bg-blue-700">
+                        className="rounded-lg bg-orange-500 px-3 py-2 text-xs font-semibold transition hover:bg-orange-600">
                         📧 Proposer le rendez-vous
                       </button>
                       <button type="button" onClick={() => marquerSuiviFait(l, etape)}
@@ -689,7 +689,7 @@ export default function DashboardPage() {
               ) : (
                 <>
                   <p className="mt-1 text-sm text-gray-400">Commencez par saisir votre premier entretien client.</p>
-                  <a href="/diagnostic" className="mt-5 inline-block rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-700">
+                  <a href="/diagnostic" className="mt-5 inline-block rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold transition hover:bg-orange-600">
                     + Nouveau diagnostic
                   </a>
                 </>

@@ -41,7 +41,7 @@ export default async function ExemplePage({ searchParams }: {
                 Entreprise, consultant, chiffres et outils sont <strong>fictifs</strong>. Avec {ENTREPRISE.nomCommercial}, le vôtre porte votre logo et vos couleurs.
               </p>
             </div>
-            <a href="/signup" className="shrink-0 rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold transition hover:bg-blue-700">
+            <a href="/signup" className="shrink-0 rounded-lg bg-orange-500 px-5 py-3 text-center text-sm font-semibold transition hover:bg-orange-600">
               Créer le mien : {ANALYSES_OFFERTES_ESSAI} analyses offertes
             </a>
           </div>
@@ -79,7 +79,7 @@ export default async function ExemplePage({ searchParams }: {
             Collez la transcription de votre prochain rendez-vous : le rapport est prêt en quelques minutes, à votre marque.
             {' '}{ANALYSES_OFFERTES_ESSAI} analyses offertes, sans carte bancaire.
           </p>
-          <a href="/signup" className="mt-6 inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold transition hover:bg-blue-700">
+          <a href="/signup" className="mt-6 inline-block rounded-lg bg-orange-500 px-8 py-4 text-lg font-semibold transition hover:bg-orange-600">
             Essayer gratuitement 🚀
           </a>
         </section>

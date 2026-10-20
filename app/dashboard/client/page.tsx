@@ -225,7 +225,7 @@ export default function FicheClientPage() {
             <div className="mt-1 flex flex-wrap items-center justify-between gap-4">
               <h1 className="text-3xl font-bold sm:text-4xl">{nomAffiche || 'Client'}</h1>
               {nomAffiche && (
-                <a href={lienNouveau} className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-700">
+                <a href={lienNouveau} className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold transition hover:bg-orange-600">
                   + Nouveau diagnostic pour ce client
                 </a>
               )}
@@ -298,7 +298,7 @@ export default function FicheClientPage() {
                         </label>
                         <div className="flex flex-wrap items-center gap-3">
                           <button type="submit" disabled={etatFiche === 'enCours'}
-                            className="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700 disabled:opacity-50">
+                            className="rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold transition hover:bg-orange-600 disabled:opacity-50">
                             {etatFiche === 'enCours' ? 'Enregistrement…' : '💾 Enregistrer la fiche'}
                           </button>
                           <span role="status" className="text-sm">

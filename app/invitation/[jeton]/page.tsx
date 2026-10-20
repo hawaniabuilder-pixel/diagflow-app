@@ -105,7 +105,7 @@ export default function InvitationPage() {
         <h1 className="mt-4 text-2xl font-bold">🎉 Bienvenue dans l’équipe « {invitation.equipe_nom} » !</h1>
         <p className="mt-3 text-gray-300">Vous êtes maintenant {role.emoji} {role.libelle}. {role.description}</p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href="/dashboard" className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-700">Aller au tableau de bord</a>
+          <a href="/dashboard" className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold transition hover:bg-orange-600">Aller au tableau de bord</a>
           <a href="/dashboard/equipe" className="rounded-lg border border-gray-500 px-5 py-3 text-sm font-semibold transition hover:border-gray-300">👥 Voir l’équipe</a>
         </div>
       </Cadre>
@@ -134,7 +134,7 @@ export default function InvitationPage() {
             Pour accepter, connectez-vous (ou créez votre compte) avec l’adresse : <strong className="text-white">{invitation.email}</strong>
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <a href={avecSuite('/login', ici)} className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold transition hover:bg-blue-700">Se connecter</a>
+            <a href={avecSuite('/login', ici)} className="rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold transition hover:bg-orange-600">Se connecter</a>
             <a href={avecSuite('/signup', ici)} className="rounded-lg border border-gray-500 px-5 py-3 text-sm font-semibold transition hover:border-gray-300">Créer un compte</a>
           </div>
           <p className="mt-4 text-xs text-gray-400">Nouveau compte ? Après avoir confirmé votre email, revenez sur ce lien pour terminer.</p>

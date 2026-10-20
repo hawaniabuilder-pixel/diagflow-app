@@ -266,7 +266,7 @@ function RapportLocal({ d, onNouveau }: { d: any; onNouveau: () => void }) {
         >
           🔬 Approfondir avec l'IA (Premium)
         </button>
-        <button onClick={() => { alert('📄 Dans la fenêtre qui va s\'ouvrir :\n1. Destination : choisissez « Enregistrer au format PDF »\n2. Cliquez sur « Enregistrer »\n3. Choisissez où garder le fichier (Bureau par exemple).'); window.print(); }} className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">
+        <button onClick={() => { alert('📄 Dans la fenêtre qui va s\'ouvrir :\n1. Destination : choisissez « Enregistrer au format PDF »\n2. Cliquez sur « Enregistrer »\n3. Choisissez où garder le fichier (Bureau par exemple).'); window.print(); }} className="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition hover:bg-orange-600">
           🖨️ Exporter en PDF (impression)
         </button>
         <button onClick={copierSynthese} className="rounded-lg bg-gray-700 px-6 py-3 font-semibold text-white transition hover:bg-gray-600">
@@ -633,7 +633,7 @@ export default function DiagnosticPage() {
                 </div>
 
                 <button onClick={genererAnalyse} disabled={generation || !enLigne}
-                  className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-semibold px-6 py-4 rounded-lg transition-all shadow-lg">
+                  className="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-700 disabled:cursor-not-allowed text-white font-semibold px-6 py-4 rounded-lg transition-all shadow-lg">
                   {generation ? (
                     <><span className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></span> Analyse en cours...</>
                   ) : (

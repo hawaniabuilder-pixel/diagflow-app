@@ -79,7 +79,7 @@ export default function GuideDemarrage({ etapes }: { etapes: EtapeGuide[] }) {
               {!e.fait && (
                 <>
                   <p className="mt-0.5 text-xs text-gray-400">{e.detail}</p>
-                  <a href={e.lien} className="mt-2 inline-block rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold transition hover:bg-blue-700">
+                  <a href={e.lien} className="mt-2 inline-block rounded-lg bg-orange-500 px-3 py-1.5 text-xs font-semibold transition hover:bg-orange-600">
                     {e.bouton}
                   </a>
                 </>

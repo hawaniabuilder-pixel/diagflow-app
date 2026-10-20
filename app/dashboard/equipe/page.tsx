@@ -319,7 +319,7 @@ export default function EquipePage() {
                     onChange={(e) => setNomEquipe(e.target.value)} />
                 </label>
                 <button type="submit" disabled={!nomEquipe.trim() || enCours === 'creer'}
-                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50">
+                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-50">
                   {enCours === 'creer' && <Spinner />} Créer mon équipe — {JOURS_ESSAI} jours gratuits
                 </button>
               </form>
@@ -375,7 +375,7 @@ export default function EquipePage() {
                         <input className={`${inputClass} mt-1`} value={renommage} maxLength={120} autoFocus
                           onChange={(e) => setRenommage(e.target.value)} />
                       </label>
-                      <button type="submit" disabled={!renommage.trim() || enCours === 'renommer'} className="rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold hover:bg-blue-700 disabled:opacity-50">OK</button>
+                      <button type="submit" disabled={!renommage.trim() || enCours === 'renommer'} className="rounded-lg bg-orange-500 px-4 py-3 text-sm font-semibold hover:bg-orange-600 disabled:opacity-50">OK</button>
                       <button type="button" onClick={() => setRenommage(null)} className="rounded-lg border border-gray-600 px-4 py-3 text-sm text-gray-300">Annuler</button>
                     </form>
                   )}
@@ -396,7 +396,7 @@ export default function EquipePage() {
                   {estAdmin && !abonnementEnCours(abonnement) && !equipe.licence_active && (
                     <>
                       <button type="button" onClick={payer} disabled={paiement !== null}
-                        className="mt-3 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold transition hover:bg-blue-700 disabled:opacity-50">
+                        className="mt-3 inline-flex items-center gap-2 rounded-lg bg-orange-500 px-4 py-2 text-xs font-semibold transition hover:bg-orange-600 disabled:opacity-50">
                         {paiement === 'payer' ? <Spinner /> : <span aria-hidden>💳</span>}
                         {paiement === 'payer' ? 'Ouverture de Stripe…' : `Activer l’offre Équipe — ${PRIX_OFFRE_EQUIPE} €/mois`}
                       </button>
@@ -491,7 +491,7 @@ export default function EquipePage() {
                     </fieldset>
 
                     <button type="submit" disabled={!peutInviter}
-                      className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50">
+                      className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-50">
                       {enCours?.startsWith('inviter-') && <Spinner />} ✉️ Créer l’invitation
                     </button>
                   </form>
@@ -504,7 +504,7 @@ export default function EquipePage() {
                     <p className="mt-1 text-sm text-gray-300">Choisissez comment l’envoyer :</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       <a href={lienMailto(invitationPrete.email, invitationPrete.objet, invitationPrete.corps)}
-                        className="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700">📧 Ma messagerie</a>
+                        className="rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold transition hover:bg-orange-600">📧 Ma messagerie</a>
                       <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(invitationPrete.email)}&su=${encodeURIComponent(invitationPrete.objet)}&body=${encodeURIComponent(invitationPrete.corps)}`}
                         target="_blank" rel="noopener noreferrer"
                         className="rounded-lg border border-gray-500 px-4 py-2.5 text-sm font-semibold transition hover:border-gray-300">✉️ Gmail</a>

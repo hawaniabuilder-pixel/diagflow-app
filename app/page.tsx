@@ -96,7 +96,7 @@ export default function Home() {
           <div className="flex items-center gap-4 sm:gap-6">
             <a href="#tarifs" className="text-gray-300 transition hover:text-white">Tarifs</a>
             <a href="/login" className="text-gray-300 transition hover:text-white">Connexion</a>
-            <a href="/signup" className="rounded-lg bg-blue-600 px-4 py-2 font-semibold transition hover:bg-blue-700">S’inscrire</a>
+            <a href="/signup" className="rounded-lg bg-orange-500 px-4 py-2 font-semibold transition hover:bg-orange-600">S’inscrire</a>
           </div>
         </nav>
       </header>
@@ -115,7 +115,7 @@ export default function Home() {
             (outils adaptés, plan d’action, gains en euros). Vous le relisez, l’envoyez, et vous suivez le client jusqu’à la mission signée.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/signup" className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold transition hover:scale-105 hover:bg-blue-700">
+            <a href="/signup" className="inline-block rounded-lg bg-orange-500 px-8 py-4 text-lg font-semibold transition hover:scale-105 hover:bg-orange-600">
               Essayer gratuitement 🚀
             </a>
             <a href="/exemple" className="inline-block rounded-lg border border-gray-600 px-8 py-4 text-lg font-semibold text-gray-200 transition hover:border-gray-400 hover:text-white">
@@ -144,7 +144,7 @@ export default function Home() {
             <div className="grid gap-8 md:grid-cols-3">
               {ETAPES.map((e) => (
                 <div key={e.numero} className={carte}>
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-lg font-bold">{e.numero}</div>
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-lg font-bold">{e.numero}</div>
                   <h3 className="mb-2 text-xl font-bold">{e.titre}</h3>
                   <p className="text-gray-400">{e.texte}</p>
                 </div>
@@ -194,7 +194,7 @@ export default function Home() {
               return (
                 <div key={id} className={`relative rounded-xl border p-6 ${t.recommande ? 'border-blue-500 bg-blue-950/30' : 'border-gray-700 bg-gray-800'}`}>
                   {t.recommande && (
-                    <span className="absolute -top-3 left-6 rounded-full bg-blue-600 px-3 py-0.5 text-xs font-semibold">Recommandé</span>
+                    <span className="absolute -top-3 left-6 rounded-full bg-orange-500 px-3 py-0.5 text-xs font-semibold">Recommandé</span>
                   )}
                   <p className="text-lg font-bold">{t.emoji} {t.nom}</p>
                   <p className="mt-1 text-sm text-gray-400">{t.pages} page{t.pages > 1 ? 's' : ''} · {t.slogan}</p>
@@ -232,7 +232,7 @@ export default function Home() {
                   <li>✓ Relances et suivi des missions signées</li>
                   <li>✓ Mode démo illimité</li>
                 </ul>
-                <a href="/signup" className="mt-6 block rounded-lg bg-blue-600 py-3 text-center font-semibold transition hover:bg-blue-700">
+                <a href="/signup" className="mt-6 block rounded-lg bg-orange-500 py-3 text-center font-semibold transition hover:bg-orange-600">
                   Commencer : {ANALYSES_OFFERTES_ESSAI} analyses offertes
                 </a>
                 <p className="mt-2 text-center text-xs text-gray-400">Sans carte bancaire · <a href="/exemple" className="underline hover:text-white">voir un exemple de rapport</a></p>
@@ -288,7 +288,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <a href="/signup" className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold transition hover:bg-blue-700">
+            <a href="/signup" className="inline-block rounded-lg bg-orange-500 px-8 py-4 text-lg font-semibold transition hover:bg-orange-600">
               Essayer gratuitement 🚀
             </a>
           </div>

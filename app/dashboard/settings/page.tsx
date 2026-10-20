@@ -555,7 +555,7 @@ export default function SettingsPage() {
             <BadgeConnexion enLigne={enLigne} />
           </div>
           <button type="button" onClick={() => { setChargement(true); setEssaiChargement((n) => n + 1) }}
-            className="mt-5 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold transition hover:bg-blue-700">
+            className="mt-5 rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold transition hover:bg-orange-600">
             🔄 Réessayer
           </button>
         </div>
@@ -753,7 +753,7 @@ export default function SettingsPage() {
                 details={[`${ANALYSES_IA_INCLUSES} analyses IA par mois`, 'Les 3 formats de rapport', 'Sans engagement']}>
                 {peutPrendreSolo && (
                   <button type="button" onClick={passerEnSolo} disabled={actionOffre !== null}
-                    className="w-full rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold transition hover:bg-blue-700 disabled:opacity-50">
+                    className="w-full rounded-lg bg-orange-500 px-4 py-3 text-sm font-semibold transition hover:bg-orange-600 disabled:opacity-50">
                     {actionOffre === 'payer' ? 'Ouverture de Stripe…' : `💳 Passer en Solo — ${TARIF_SOLO_MENSUEL ?? 29} €/mois`}
                   </button>
                 )}
@@ -906,7 +906,7 @@ export default function SettingsPage() {
         type="button"
         onClick={() => { void enregistrer() }}
         disabled={!nonSauvegarde || !valide || enCours || !enLigne}
-        className="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+        className="rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-60"
       >
         💾 Enregistrer maintenant
       </button>

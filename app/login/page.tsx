@@ -74,7 +74,7 @@ export default function LoginPage() {
           </div>
 
           <button type="submit" disabled={loading}
-            className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50">
+            className="w-full rounded-lg bg-orange-500 py-3 font-semibold text-white hover:bg-orange-600 disabled:opacity-50">
             {loading ? 'Connexion…' : 'Se connecter'}
           </button>
         </form>
